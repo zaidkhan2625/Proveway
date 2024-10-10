@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive BOGO Pricing Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <p>YAY! It's BOGO</p>
+        <div class="option" data-price="10.00">
+            <div class="option-content">
+                <div class="option-details">
+                    <label for="option1">
+                        <input type="radio" name="option" id="option1" checked />
+                        1 Unit <span class="discount">10% Off</span>
+                    </label>
+                    <span class="standard-price">Standard Price</span>
+                </div>
+                <div class="price-details">
+                    <span class="price">$10.00 USD</span>
+                    <span class="original-price">$24.00 USD</span>
+                </div>
+            </div>
+        </div>
+        <div class="option popular" data-price="18.00">
+            <input type="radio" name="option" id="option2" />
+            <label for="option2">2 Unit <span class="discount">20% Off</span></label>
+            <span class="price">$18.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+            <div class="size-color-labels">
+                <span>Size</span>
+                <span>Colour</span>
+            </div>
+            <div class="size-color-container">
+                <div class="unit-number">#1</div>
+                <div class="size-color">
+                    <select>
+                        <option>S</option>
+                    </select>
+                    <select>
+                        <option>Black</option>
+                    </select>
+                </div>
+            </div>
+            <div class="size-color-container">
+                <div class="unit-number">#2</div>
+                <div class="size-color">
+                    <select>
+                        <option>S</option>
+                    </select>
+                    <select>
+                        <option>Colour</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="option" data-price="24.00">
+            <input type="radio" name="option" id="option3" />
+            <label for="option3">3 Unit <span class="discount">30% Off</span></label>
+            <span class="price">$24.00 USD</span>
+            <span class="original-price">$24.00 USD</span>
+        </div>
+        <div class="total">
+            <span class="free-delivery">Free Delivery</span>
+            Total: <span id="total-price">$10.00 USD</span>
+        </div>
+        <button class="add-to-cart">+ Add to Cart</button>
+        <div
+            style="
+                text-align: right;
+                font-size: 0.8em;
+                color: #999;
+                margin-top: 10px;
+            "
+        >
+            @ Powered by Pumper
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
